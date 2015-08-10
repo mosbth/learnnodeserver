@@ -1,0 +1,20 @@
+{
+  "name": "learnnodeserver",
+  "description": "Learn to create a server using Node.js.",
+  "version": "1.0.1",
+  "repository": {
+    "url": "git://github.com/mosbth/learnnodeserver.git"
+  },
+  "author": "Mikael Roos",
+  "bin": {
+    "learnnodeserver": "index.js"
+  },
+  "preferGlobal": true,
+  "dependencies": {
+    "cli-md": "^0.1.0",
+    "colors": "^1.0.3",
+    "diff": "^1.2.1",
+    "workshopper-adventure": "^3.4.5"
+  },
+  "license": "MIT"
+}
