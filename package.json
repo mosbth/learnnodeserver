@@ -1,7 +1,7 @@
 {
   "name": "learnnodeserver",
   "description": "Learn to create a server using Node.js.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "repository": {
     "url": "git://github.com/mosbth/learnnodeserver.git"
   },
