@@ -1,7 +1,5 @@
 ---
 
-# YOU DID IT!
-
 Anything between the parentheses of `console.log()` are printed to the terminal.
 
 So this: 
@@ -14,6 +12,6 @@ prints `hello` to the terminal.
 
 Currently we are printing a **string** of characters to the terminal: `hello`.
 
-Run `javascripting` in the console to choose the next challenge.
+Run `$ADVENTURE_COMMAND` in the console to choose the next challenge.
 
 ---

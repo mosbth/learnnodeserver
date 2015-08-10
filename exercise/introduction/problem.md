@@ -3,11 +3,11 @@
 
 Lets create a folder for this workshop, just to keep things organized. 
 
-`mkdir learnnodeserver`
+`mkdir $ADVENTURE_COMMAND`
 
-Change directory into the `learnnodeserver` folder:
+Change directory into the `$ADVENTURE_COMMAND` folder:
 
-`cd learnnodeserver`
+`cd $ADVENTURE_COMMAND`
 
 Create a file named `introduction.js`:
 

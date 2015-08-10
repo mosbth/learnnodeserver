@@ -2,18 +2,25 @@
 
 var path = require('path');
 var adventure = require('workshopper-adventure/adventure');
-var jsing = adventure({
-    name: 'learnnodeserver'
-  , appDir: __dirname
-  , languages: ['en']
+
+// Create the adventure object
+var adv = adventure({
+    name: 'learnnodeserver',
+    title: 'Learn To Program A Node Server',
+    appDir: __dirname,
+    languages: ['en']
 });
 
-var problems = require('./menu.json');
+// Create the problem objects and add to the adventure
+var problems = require('./exercise/menu.json');
 
 problems.forEach(function (problem) {
-  var p = problem.toLowerCase().replace(/\s/g, '-');
-  var dir = path.join(__dirname, 'problems', p);
-  jsing.add(problem, function () { return require(dir); });
+    var p = problem.toLowerCase().replace(/\s/g, '-');
+    var dir = path.join(__dirname, 'exercise', p);
+    adv.add(problem, function () { 
+        return require(dir); 
+    });
 });
 
-jsing.execute(process.argv.slice(2));
+// Run the adventure with its arguments
+adv.execute(process.argv.slice(2));
